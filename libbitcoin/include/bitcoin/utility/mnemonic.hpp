@@ -20,6 +20,7 @@
 #ifndef LIBBITCOIN_MNEMONIC_HPP
 #define LIBBITCOIN_MNEMONIC_HPP
 
+#include <iostream>
 #include <string>
 #include <vector>
 

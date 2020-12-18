@@ -42,7 +42,7 @@ This software relies on a specific commit of libbitcoin (and probably
 will not work with other commits). This specific commit is included and
 you have to compile it first.
 
-	$ sudo apt-get install build-essential autoconf automake libtool libboost-all-dev pkg-config libcurl4-openssl-dev libleveldb-dev shtool
+	$ sudo apt-get install build-essential autoconf automake libtool libboost-all-dev pkg-config libcurl4-openssl-dev libleveldb-dev shtool libssl-dev
 	$ cd libbitcoin
 	$ ln -s $(which shtool)
 	$ autoreconf -i
@@ -102,3 +102,8 @@ When ./bcclient receives a transaction it prints by default it in a
 succinct way. In order to include fields description, use '-v' flag. 
 
 BC:14iyH71Y9kEDUXdQCytizPNTvFNAUUn3do
+
+## reference
+- [bitcoin protocol](https://en.bitcoin.it/wiki/Protocol_documentation)
+- [libbitcoin system](https://github.com/libbitcoin/libbitcoin-system)
+

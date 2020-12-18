@@ -453,7 +453,7 @@ void connect_started(const std::error_code& ec, channel_ptr node, struct peer_ad
     // Create our version message we want to send.
     // Fill in a bunch of fields.
     version_type version;
-    version.version = 70014;
+    version.version = 70015;
     version.services = 7;
     version.timestamp = time(NULL);
     version.address_me.services = version.services;
@@ -471,7 +471,7 @@ void connect_started(const std::error_code& ec, channel_ptr node, struct peer_ad
     version.address_you.port = 8333;
     // Set the user agent.
     version.user_agent = "/xbadprobe:1.0/";
-    version.start_height = 465166;
+    version.start_height = 661811;
     version.nonce = rand();
 
     subscribe_to_events(node, listen_msgs, send_msgs, remote_addr);
